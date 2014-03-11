@@ -1,0 +1,147 @@
+html, body, ul, ol, h1, h2, h3, h4, h5, h6, a, p, span, label, input, textarea, li, img, div, table, tr, td, form, select, th, tbody {
+    border: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    line-height: 1em;
+    font-family: Arial, sans-serif;
+}
+.stretcher
+{
+    clear: both;
+    display: block;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.floatLeft
+{
+    float: left;
+}
+
+.floatNone
+{
+    float: none;
+}
+
+.floatRight
+{
+    float: right;
+}
+
+.alignLeft
+{
+    text-align: left;
+}
+
+.alignCenter
+{
+    text-align: center !important;
+}
+
+.alignRight
+{
+    text-align: right;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+#main
+{
+    position: relative;
+    padding: 20px;
+}
+
+.listWrapper
+{
+    border-radius: 8px;
+    border: 1px solid #333333;
+    -moz-box-shadow: 0 0 2px 2px #888;
+    -webkit-box-shadow: 0 0 2px 2px#888;
+    box-shadow: 0 0 2px 2px #888;
+}
+
+#newsList li
+{
+    margin: 0 0 5px 0;
+}
+
+#newsList a
+{
+    display: block;
+    color: #333333;
+    padding: 5px;
+}
+
+#newsList a:hover
+{
+    background: #ccc;
+    color: #000;
+}
+
+#newsList img
+{
+    float: left;
+}
+
+#popup
+{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 640px;
+    margin-left:-370px;
+    border-radius: 8px;
+    border: 1px solid #333333;
+    -moz-box-shadow: 0 0 2px 2px #888;
+    -webkit-box-shadow: 0 0 2px 2px#888;
+    box-shadow: 0 0 2px 2px #888;
+    background: #e5e5e5;
+    padding: 10px;
+
+}
+
+a.closeButton
+{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: #333333;
+    border-radius: 8px;
+    border: 2px solid #333333;
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    background: #cccccc;
+    padding: 5px 7px;
+}
+
+.active
+{
+    background: #cccccc;
+}
+
+a.closeButton:hover
+{
+    color: #000;
+}
+
+#popup .content
+{
+    overflow: auto;
+    max-height: 400px;
+    margin-top: 10px;
+}
+
+#popup a.readMore
+{
+    display: block;
+}
