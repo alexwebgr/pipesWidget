@@ -2,21 +2,30 @@ var App =
 {
     Response : {},
     amountOfItems : 10,
+    pipeUrl : null,
 
     init : function()
     {
         App.createList();
-        App._attachEventHandlers();
+        App.attachEventHandlers();
+    },
+
+    setPipeUrl : function(url)
+    {
+      this.pipeUrl = url;
+    },
+
+    setAmountOfItems : function(amount)
+    {
+      this.amountOfItems = amount;
     },
 
     createList : function()
     {
         var container = "#newsList";
         var template = "assets/newsListItem.html";
-        var url = "data.json";
-        //var url = "http://pipes.yahoo.com/pipes/pipe.run?_id=DqsF_ZG72xGLbes9l7okhQ&_render=json";
 
-        $.get(url, function(data)
+        $.get(App.pipeUrl, function(data)
         {
             App.Response = data;
             App.Response.value.items = data.value.items.slice(0, App.amountOfItems);
@@ -55,7 +64,7 @@ var App =
         },"html");
     },
 
-    _attachEventHandlers : function()
+    attachEventHandlers : function()
     {
         $("#newsList")
             .on(
